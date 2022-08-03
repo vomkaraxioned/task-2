@@ -257,11 +257,9 @@ li {
     border-bottom: 1px solid #cdcdcd;
 }
 
-.tab:nth-last-child(1) {
-    width: 100%;
-}
-
 .none {
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
     text-indent: -9999px;
 }
 
