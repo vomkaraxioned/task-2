@@ -239,7 +239,13 @@ li {
     align-items: center;
 }
 
+.content {
+    padding: 10px 5%;
+    border: 1px solid #cdcdcd;
+}
+
 .title {
+    padding: 10px 0;
     font-size: 21px;
     text-transform: uppercase;
 }
@@ -266,12 +272,13 @@ li {
 .active,
 .tab:hover {
     border: 1px solid #cdcdcd;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     border-bottom: none;
     z-index: 10;
 }
 
 .description {
+    padding: 20px 0;
     display: none;
 }
 
