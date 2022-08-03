@@ -1,8 +1,9 @@
 /* Author: 
 
 */
-
+let index;
 const tab = document.getElementsByClassName('tab');
+const info = document.getElementsByClassName('description');
 for (x in tab) {
     tab[x].addEventListener("click", show);
 }
@@ -13,4 +14,16 @@ function show() {
     }
     this.className += " active";
     alert(this.className);
+    change();
+}
+
+function change() {
+    for (x in tab) {
+        if (tab[x].className == 'tab active') {
+            for (j in info) {
+                info[j].className = "description";
+            }
+            info[x].className += " active-content";
+        }
+    }
 }
