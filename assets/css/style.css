@@ -248,10 +248,13 @@ li {
     display: flex;
 }
 
+.tab a {
+    color: #2290fe;
+}
+
 .tab {
     padding: 10px 5%;
     border-bottom: 1px solid #cdcdcd;
-    color: #2290fe;
 }
 
 .tab:nth-last-child(1) {
