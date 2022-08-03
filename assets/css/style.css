@@ -261,11 +261,6 @@ li {
     width: 100%;
 }
 
-.tab:nth-last-child(1):hover {
-    border: none;
-    border-bottom: 1px solid #cdcdcd;
-}
-
 .none {
     text-indent: -9999px;
 }
