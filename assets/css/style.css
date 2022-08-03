@@ -239,6 +239,54 @@ li {
     align-items: center;
 }
 
+.title {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    padding: 10px 5%;
+    border-bottom: 1px solid #cdcdcd;
+    color: #2290fe;
+}
+
+.tab:nth-last-child(1) {
+    width: 100%;
+}
+
+.tab:nth-last-child(1):hover {
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.none {
+    text-indent: -9999px;
+}
+
+.active,
+.tab:hover {
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    border-bottom: none;
+    z-index: 10;
+}
+
+.description {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
+
+.keyword {
+    color: #da4095;
+}
+
 
 /*=================================
   main styling ends here
