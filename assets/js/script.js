@@ -13,7 +13,6 @@ function show() {
         tab[x].className = "tab";
     }
     this.className += " active";
-    alert(this.className);
     change();
 }
 
