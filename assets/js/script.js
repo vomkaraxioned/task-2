@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* Author: 
 
 */
@@ -47,4 +45,3 @@ function addData() {
 */
 // addBtn.addEventListener("click", addData);
 // const addBtn = document.forms['add-info']['submit'];
->>>>>>> feature-js
