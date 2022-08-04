@@ -13,7 +13,7 @@ for (x in tabs) {
 
 //tab switch function
 function tabSwitch() {
-    let activeTabs = document.getElementsByClassName('tab active');;
+    let activeTabs = document.getElementsByClassName('tab active');
     activeTabs[0].className = "tab";
     this.className += " active";
     showContent();
@@ -30,7 +30,8 @@ function showContent() {
 }
 
 
-function addData() {
+function addData(e) {
+    e.preventDefault();
     let tabsHolder = document.getElementsByClassName("tabs");
     let lastLi = document.getElementsByClassName("none");
     let titleName = document.forms['add-info']['title'].value;
@@ -66,9 +67,9 @@ function addData() {
     para.appendChild(highlight);
     anchor.appendChild(anchorContent);
     newTab.appendChild(anchor);
-    tabsHolder.insertBefore(newTab, lastLi[0]);
-    alert(paraContent);
-    console.log("working");
+    tabsHolder[0].insertBefore(newTab, lastLi[0]);
     infoBlock[0].appendChild(para);
+    alert(content);
+    console.log("working");
 
 }
