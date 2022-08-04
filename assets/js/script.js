@@ -33,15 +33,17 @@ function change() {
     }
 }
 
-// function addData() {
-//     let title = document.forms['add-info']['title'].value;
-//     let content = document.forms['add-info']['content'].value;
-//     let keyword = document.forms['add-info']['keyword'].value;
-//     const infoBlock = document.getElementsByClassName("info");
-//     const tabs = document.getElementsByClassName("tab");
-//     let data = "<p class=\"description\"><span class=\"title\">${title}</span>${content}<span class=\"keyword\">${keyword}</span> powered navigation.</p>";
-//     let tab = "<li class=\"tab\"><a href=\"#FIXME\" title=\"${keyword}\">${keyword}</a></li>";
-//     tabs.appendChild(tab);
-//     infoBlock.appendChild(data);
+/*
+function addData() {
+    let title = document.forms['add-info']['title'].value;
+    let content = document.forms['add-info']['content'].value;
+    let keyword = document.forms['add-info']['keyword'].value;
+    const infoBlock = document.getElementsByClassName("info");
+    const tabs = document.getElementsByClassName("tab");
+    let data = "<p class=\"description\"><span class=\"title\">${title}</span>${content}<span class=\"keyword\">${keyword}</span> powered navigation.</p>";
+    let tab = "<li class=\"tab\"><a href=\"#FIXME\" title=\"${keyword}\">${keyword}</a></li>";
+    tabs.appendChild(tab);
+    infoBlock.appendChild(data);
 
-// }
+}
+*/
