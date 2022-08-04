@@ -3,28 +3,24 @@
 */
 const tabs = document.getElementsByClassName('tab');
 const info = document.getElementsByClassName('description');
-const addBtn = document.forms['add-info']['submit'];
-tab.forEach(function() {
-    alert("print hello");
-});
-//taking data from form 
-addBtn.addEventListener("click", addData);
+// let activeContent = document.getElementsByClassName('description active-content');
+
 //tabs and content change
-for (x in tab) {
-    tab[x].addEventListener("click", show);
+for (x in tabs) {
+    tabs[x].addEventListener("click", show);
 }
 
 function show() {
-    for (x in tab) {
-        tab[x].className = "tab";
-    }
+    let activeTab = document.getElementsByClassName('tab active');
+    alert(activeTab);
+    activeTab[0].className = "tab";
     this.className += " active";
     change();
 }
 
 function change() {
-    for (x in tab) {
-        if (tab[x].className == 'tab active') {
+    for (x in tabs) {
+        if (tabs[x].className == 'tab active') {
             for (j in info) {
                 info[j].className = "description";
             }
@@ -47,3 +43,5 @@ function addData() {
 
 }
 */
+// addBtn.addEventListener("click", addData);
+// const addBtn = document.forms['add-info']['submit'];
