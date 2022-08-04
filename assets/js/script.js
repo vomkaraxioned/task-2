@@ -2,7 +2,7 @@
 
 */
 let index;
-const tab = document.getElementsByClassName('tab');
+const tabs = document.getElementsByClassName('tab');
 const info = document.getElementsByClassName('description');
 for (x in tab) {
     tab[x].addEventListener("click", show);
@@ -15,6 +15,8 @@ function show() {
     this.className += " active";
     change();
 }
+
+
 
 function change() {
     for (x in tab) {
