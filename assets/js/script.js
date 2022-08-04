@@ -6,7 +6,6 @@ const info = document.getElementsByClassName('description');
 const addBtn = document.forms['add-info']['submit'];
 
 addBtn.addEventListener("click", addData);
-
 //tabs and content change
 for (x in tabs) {
     tabs[x].addEventListener("click", tabSwitch);
@@ -32,35 +31,32 @@ function showContent() {
 
 
 function addData() {
-
-    let title = document.forms['add-info']['title'].value;
+    let tabsHolder = document.getElementsByClassName("tabs");
+    let lastLi = document.getElementsByClassName("none");
+    let titleName = document.forms['add-info']['title'].value;
     let content = document.forms['add-info']['content'].value;
     let keyword = document.forms['add-info']['keyword'].value;
     const infoBlock = document.getElementsByClassName("info");
-    // let data = "<p class=\"description\"><span class=\"title\">${title}</span>${content}<span class=\"keyword\">${keyword}</span> powered navigation.</p>";
-    // let tab = "<li class=\"tab\"><a href=\"#FIXME\" title=\"${keyword}\">${keyword}</a></li>";
-    //elements created
-    alert("working");
-    // let para = document.createElement("P");
-    // let newTab = document.createElement("li");
-    // let title = document.createElement("span");
-    // let highlight = document.createElement("span");
-    // let anchor = document.createElement("a");
 
-    /*
+    //elements created
+    let para = document.createElement("P");
+    let newTab = document.createElement("li");
+    let title = document.createElement("span");
+    let highlight = document.createElement("span");
+    let anchor = document.createElement("a");
+
     //text nodes created
     let paraContent = document.createTextNode(content);
-    let titleContent = document.createTextNode(title);
+    let titleContent = document.createTextNode(titleName);
     let highlightContent = document.createTextNode(keyword);
     let anchorContent = document.createTextNode(keyword);
-
     //class name given
-    // para.className = "description";
-    // newTab.className = "tab";
-    // title.className = "title";
-    // highlight.className = "keyword";
-    // anchor.attributes['href'] = "#FIXME";
-    // anchor.attributes['title'] = keyword;
+    para.className = "description";
+    newTab.className = "tab";
+    title.className = "title";
+    highlight.className = "keyword";
+    anchor.attributes['href'] = "#FIXME";
+    anchor.attributes['title'] = keyword;
 
     //appending text node to element
     title.appendChild(titleContent);
@@ -70,7 +66,9 @@ function addData() {
     para.appendChild(highlight);
     anchor.appendChild(anchorContent);
     newTab.appendChild(anchor);
-    tabs.appendChild(newTab);
-    infoBlock.appendChild(para);
-*/
+    tabsHolder.insertBefore(newTab, lastLi[0]);
+    alert(paraContent);
+    console.log("working");
+    infoBlock[0].appendChild(para);
+
 }
