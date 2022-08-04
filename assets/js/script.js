@@ -4,7 +4,6 @@
 const tabs = document.getElementsByClassName('tab');
 const info = document.getElementsByClassName('description');
 const addBtn = document.forms['add-info']['submit'];
-// let contentIndex;
 
 addBtn.addEventListener("click", addData);
 
@@ -33,20 +32,22 @@ function showContent() {
 
 
 function addData() {
+
     let title = document.forms['add-info']['title'].value;
     let content = document.forms['add-info']['content'].value;
     let keyword = document.forms['add-info']['keyword'].value;
     const infoBlock = document.getElementsByClassName("info");
-
     // let data = "<p class=\"description\"><span class=\"title\">${title}</span>${content}<span class=\"keyword\">${keyword}</span> powered navigation.</p>";
     // let tab = "<li class=\"tab\"><a href=\"#FIXME\" title=\"${keyword}\">${keyword}</a></li>";
     //elements created
+    alert("working");
+    // let para = document.createElement("P");
+    // let newTab = document.createElement("li");
+    // let title = document.createElement("span");
+    // let highlight = document.createElement("span");
+    // let anchor = document.createElement("a");
 
-    let para = document.createElement('p');
-    let newTab = document.createElement('li');
-    let title = document.createElement('span');
-    let highlight = document.createElement('span');
-    let anchor = document.createElement('a');
+    /*
     //text nodes created
     let paraContent = document.createTextNode(content);
     let titleContent = document.createTextNode(title);
@@ -54,12 +55,12 @@ function addData() {
     let anchorContent = document.createTextNode(keyword);
 
     //class name given
-    para.className = "description";
-    newTab.className = "tab";
-    title.className = "title";
-    highlight.className = "keyword";
-    anchor.attributes['href'] = "#FIXME";
-    anchor.attributes['title'] = keyword;
+    // para.className = "description";
+    // newTab.className = "tab";
+    // title.className = "title";
+    // highlight.className = "keyword";
+    // anchor.attributes['href'] = "#FIXME";
+    // anchor.attributes['title'] = keyword;
 
     //appending text node to element
     title.appendChild(titleContent);
@@ -69,8 +70,7 @@ function addData() {
     para.appendChild(highlight);
     anchor.appendChild(anchorContent);
     newTab.appendChild(anchor);
-
     tabs.appendChild(newTab);
     infoBlock.appendChild(para);
-
+*/
 }
