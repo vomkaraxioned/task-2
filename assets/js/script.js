@@ -7,6 +7,7 @@ const addBtn = document.forms['add-info']['submit'];
 // let contentIndex;
 
 addBtn.addEventListener("click", addData);
+
 //tabs and content change
 for (x in tabs) {
     tabs[x].addEventListener("click", tabSwitch);
@@ -36,10 +37,40 @@ function addData() {
     let content = document.forms['add-info']['content'].value;
     let keyword = document.forms['add-info']['keyword'].value;
     const infoBlock = document.getElementsByClassName("info");
-    let data = "<p class=\"description\"><span class=\"title\">${title}</span>${content}<span class=\"keyword\">${keyword}</span> powered navigation.</p>";
-    let tab = "<li class=\"tab\"><a href=\"#FIXME\" title=\"${keyword}\">${keyword}</a></li>";
-    let para = document.createElement(data);
-    let newTab = document.createElement(tab);
+
+    // let data = "<p class=\"description\"><span class=\"title\">${title}</span>${content}<span class=\"keyword\">${keyword}</span> powered navigation.</p>";
+    // let tab = "<li class=\"tab\"><a href=\"#FIXME\" title=\"${keyword}\">${keyword}</a></li>";
+    //elements created
+
+    let para = document.createElement('p');
+    let newTab = document.createElement('li');
+    let title = document.createElement('span');
+    let highlight = document.createElement('span');
+    let anchor = document.createElement('a');
+    //text nodes created
+    let paraContent = document.createTextNode(content);
+    let titleContent = document.createTextNode(title);
+    let highlightContent = document.createTextNode(keyword);
+    let anchorContent = document.createTextNode(keyword);
+
+    //class name given
+    para.className = "description";
+    newTab.className = "tab";
+    title.className = "title";
+    highlight.className = "keyword";
+    anchor.attributes['href'] = "#FIXME";
+    anchor.attributes['title'] = keyword;
+
+    //appending text node to element
+    title.appendChild(titleContent);
+    highlight.appendChild(highlightContent);
+    para.appendChild(title);
+    para.appendChild(paraContent);
+    para.appendChild(highlight);
+    anchor.appendChild(anchorContent);
+    newTab.appendChild(anchor);
+
     tabs.appendChild(newTab);
     infoBlock.appendChild(para);
+
 }
