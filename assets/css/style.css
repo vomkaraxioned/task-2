@@ -377,6 +377,9 @@ input[type=submit]:hover {
 /*media query for 768px starts here*/
 
 @media only screen and (max-width: 768px) {
+    .tab {
+        width: 30%;
+    }
     .wrapper {
         width: 100%;
     }
