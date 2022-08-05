@@ -242,7 +242,7 @@ li {
 
 .content {
     width: 100%;
-    padding: 10px 5%;
+    padding: 10px 0;
     border: 1px solid #cdcdcd;
 }
 
@@ -262,11 +262,13 @@ li {
 
 .tab {
     padding: 10px 5%;
+    border-width: 1px;
     border-bottom: 1px solid #cdcdcd;
 }
 
 .none {
     width: 100%;
+    border-width: 1px;
     border-bottom: 1px solid #cdcdcd;
     text-indent: -9999px;
 }
@@ -276,13 +278,13 @@ li {
     border: 1px solid #cdcdcd;
     border-radius: 5px 5px 0 0;
     border-bottom: none;
-    z-index: 10;
 }
 
 .description {
     width: 100%;
     padding: 20px 0;
     display: none;
+    text-align: center;
 }
 
 .active-content {
@@ -308,6 +310,7 @@ form {
     padding: 20px 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -317,6 +320,8 @@ form {
 .btn-input {
     width: 80%;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-input {
@@ -328,6 +333,7 @@ input[type=text],
 textarea {
     width: 100%;
     padding: 10px 5%;
+    display: block;
 }
 
 input[type=submit] {
@@ -374,5 +380,11 @@ input[type=submit]:hover {
     }
     input[type=submit] {
         width: 40%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .btn-input {
+        width: 100%;
     }
 }
