@@ -241,7 +241,7 @@ li {
 }
 
 .content {
-    width: 100%;
+    width: 95%;
     padding: 10px 0;
     border: 1px solid #cdcdcd;
 }
@@ -271,11 +271,12 @@ li {
 .tab a {
     padding: 10px 15%;
     display: block;
+    text-align: center;
 }
 
 .none {
     flex: 1;
-    border-width: 1px;
+    border-width: 1px 1px 0 1px;
     border-bottom: 1px solid #cdcdcd;
     margin: 5px 0;
     text-indent: -9999px;
@@ -286,13 +287,14 @@ li {
     border: none;
     border: 1px solid #cdcdcd;
     border-radius: 5px 5px 0 0;
-    border-bottom: none;
+    border-bottom: transparent;
 }
 
 .description {
     width: 100%;
     padding: 20px 0;
     display: none;
+    text-align: center;
 }
 
 .active-content {
@@ -328,9 +330,6 @@ form {
 .btn-input {
     width: 80%;
     padding-bottom: 10px;
-}
-
-.btn-input {
     display: flex;
     justify-content: center;
 }
@@ -378,6 +377,9 @@ input[type=submit]:hover {
 /*media query for 768px starts here*/
 
 @media only screen and (max-width: 768px) {
+    .tab {
+        width: 30%;
+    }
     .wrapper {
         width: 100%;
     }
