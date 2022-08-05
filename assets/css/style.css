@@ -237,7 +237,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .content {
@@ -262,14 +261,14 @@ li {
 }
 
 .tab {
-    margin: 5px 0
+    width: 10%;
+    border-width: 1px 1px 0 1px;
+    border-bottom: 1px solid #cdcdcd;
+    margin: 5px 0;
 }
 
 .tab a {
-    width: 80%;
-    padding: 10px 5%;
-    border-width: 1px;
-    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 15%;
     display: block;
 }
 
@@ -281,8 +280,9 @@ li {
     text-indent: -9999px;
 }
 
-.active a,
-.tab a:hover {
+.active,
+.tab:hover {
+    border: none;
     border: 1px solid #cdcdcd;
     border-radius: 5px 5px 0 0;
     border-bottom: none;
@@ -292,7 +292,6 @@ li {
     width: 100%;
     padding: 20px 0;
     display: none;
-    text-align: center;
 }
 
 .active-content {
@@ -328,8 +327,6 @@ form {
 .btn-input {
     width: 80%;
     padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
 }
 
 .btn-input {
