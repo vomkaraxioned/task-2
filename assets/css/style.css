@@ -253,6 +253,7 @@ li {
 
 .tabs {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tab a {
