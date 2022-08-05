@@ -240,6 +240,7 @@ li {
 }
 
 .content {
+    width: 100%;
     padding: 10px 5%;
     border: 1px solid #cdcdcd;
 }
@@ -278,6 +279,7 @@ li {
 }
 
 .description {
+    width: 100%;
     padding: 20px 0;
     display: none;
 }
