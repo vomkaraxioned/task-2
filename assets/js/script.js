@@ -18,17 +18,17 @@ updateListener();
 //tab switch function
 function tabSwitch() {
     let activeTabs = document.getElementsByClassName('tab active');
-    activeTabs[0].className = "tab";
-    this.className += " active";
+    activeTabs[0].classList.remove("active");
+    this.classList.add('active');
     showContent();
 }
 
 function showContent() {
     let activeContents = document.getElementsByClassName('description active-content');
+    activeContents[0].classList.remove("active-content");
     for (x in tabs) {
         if (tabs[x].className == 'tab active') {
-            activeContents[0].className = "description";
-            info[x].className += " active-content";
+            info[x].classList.add('active-content');
         }
     }
 }
