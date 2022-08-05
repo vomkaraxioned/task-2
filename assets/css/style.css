@@ -298,6 +298,7 @@ li {
 h2 {
     padding-top: 50px;
     font-size: 21px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -361,6 +362,16 @@ input[type=submit]:hover {
 /*media query starts*/
 
 
-/*media query for 995px starts here*/
+/*media query for 768px starts here*/
 
-@media only screen and (max-width: 995px) {}
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+    form {
+        width: 90%;
+    }
+    input[type=submit] {
+        width: 40%;
+    }
+}
