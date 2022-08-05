@@ -1,15 +1,19 @@
 /* Author: 
 
 */
-const tabs = document.getElementsByClassName('tab');
-const info = document.getElementsByClassName('description');
+let tabs = document.getElementsByClassName('tab');
+let info = document.getElementsByClassName('description');
 const addBtn = document.forms['add-info']['submit'];
 
 addBtn.addEventListener("click", addData);
 //tabs and content change
-for (x in tabs) {
-    tabs[x].addEventListener("click", tabSwitch);
+function updateListener() {
+    for (x in tabs) {
+        tabs[x].addEventListener("click", tabSwitch);
+    }
 }
+
+updateListener();
 
 //tab switch function
 function tabSwitch() {
@@ -69,7 +73,6 @@ function addData(e) {
     newTab.appendChild(anchor);
     tabsHolder[0].insertBefore(newTab, lastLi[0]);
     infoBlock[0].appendChild(para);
-    alert(content);
-    console.log("working");
-
+    alert("added" + " " + keyword);
+    updateListener();
 }
