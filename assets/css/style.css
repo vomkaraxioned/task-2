@@ -268,7 +268,7 @@ li {
 }
 
 .none {
-    width: 100%;
+    flex: 1;
     border-width: 1px;
     border-bottom: 1px solid #cdcdcd;
     text-indent: -9999px;
