@@ -283,6 +283,7 @@ li {
     width: 100%;
     padding: 20px 0;
     display: none;
+    text-align: center;
 }
 
 .active-content {
@@ -318,6 +319,8 @@ form {
 .btn-input {
     width: 80%;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-input {
@@ -329,6 +332,7 @@ input[type=text],
 textarea {
     width: 100%;
     padding: 10px 5%;
+    display: block;
 }
 
 input[type=submit] {
@@ -379,7 +383,7 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 320px) {
-    h2 {
-        text-align: right;
+    .btn-input {
+        width: 100%;
     }
 }
