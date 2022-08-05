@@ -327,9 +327,6 @@ form {
 .btn-input {
     width: 80%;
     padding-bottom: 10px;
-}
-
-.btn-input {
     display: flex;
     justify-content: center;
 }
