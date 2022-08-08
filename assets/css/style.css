@@ -263,9 +263,10 @@ li {
 
 .tab {
     width: 10%;
-    border-width: 1px 1px 0 1px;
-    border-bottom: 1px solid #cdcdcd;
     margin: 5px 0;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #cdcdcd;
 }
 
 .tab a {
@@ -276,17 +277,15 @@ li {
 
 .none {
     flex: 1;
-    border-width: 1px 1px 0 1px;
-    border-bottom: 1px solid #cdcdcd;
     margin: 5px 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #cdcdcd;
     text-indent: -9999px;
 }
 
 .active,
 .tab:hover {
-    border: none;
     border: 1px solid #cdcdcd;
-    border-radius: 5px 5px 0 0;
     border-bottom: transparent;
 }
 
